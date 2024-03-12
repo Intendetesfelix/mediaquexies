@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.title{
+    background: none;
+    font-size: 3rem;
+    color: crimson;
+    margin: 40px;
+    text-align: center;
+    border-bottom: none;
+}
+
+@media screen and (min-with: 700px){
+    body{
+        background-color: chocolate;
+    }
+}
+/* este media se activa cuando la pantalla se activa en un rango a partir de los 400 pixeles a los 700*/
+@media screen and (min-with: 400px), (max-width: 700px{
+    .title{
+       background: #000;
+       color: #fff;
+    }
+}
+/*este media se activa hasta la pantalla llegue a un maximo de 600 pixeles*/
+@media screen and (max-width:600px) {
+    .title{
+        text-align: left;
+        background: steelblue;
+    }
+}
+/* este media se activa cuando le tomas screenshot a la pantalla*/
+@media print {
+    .title{
+        color: steelblue;
+        font-size: 5rem;
+        text-align: right;
+        font-family: cursive;
+    }
+}
